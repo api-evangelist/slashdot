@@ -3,8 +3,8 @@ url: https://raw.githubusercontent.com/api-evangelist/slashdot/refs/heads/main/a
 name: Slashdot
 tags:
   - Media
-  - Technology News
   - Open Source
+  - Technology News
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
