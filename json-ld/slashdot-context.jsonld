@@ -1,0 +1,151 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "slashdot": "https://slashdot.org/vocab#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "rss": "http://purl.org/rss/1.0/",
+    "sioc": "http://rdfs.org/sioc/ns#",
+
+    "NewsArticle": {
+      "@id": "schema:NewsArticle",
+      "@context": {
+        "headline": {
+          "@id": "schema:headline"
+        },
+        "description": {
+          "@id": "schema:description"
+        },
+        "url": {
+          "@id": "schema:url",
+          "@type": "@id"
+        },
+        "datePublished": {
+          "@id": "schema:datePublished",
+          "@type": "xsd:dateTime"
+        },
+        "dateModified": {
+          "@id": "schema:dateModified",
+          "@type": "xsd:dateTime"
+        },
+        "author": {
+          "@id": "schema:author"
+        },
+        "publisher": {
+          "@id": "schema:publisher"
+        },
+        "articleSection": {
+          "@id": "schema:articleSection"
+        },
+        "keywords": {
+          "@id": "schema:keywords",
+          "@container": "@set"
+        },
+        "commentCount": {
+          "@id": "schema:commentCount"
+        },
+        "commentUrl": {
+          "@id": "slashdot:commentUrl",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "DiscussionThread": {
+      "@id": "sioc:Thread",
+      "@context": {
+        "title": {
+          "@id": "dcterms:title"
+        },
+        "url": {
+          "@id": "schema:url",
+          "@type": "@id"
+        },
+        "hasReply": {
+          "@id": "sioc:has_reply",
+          "@container": "@set"
+        },
+        "numReplies": {
+          "@id": "sioc:num_replies"
+        },
+        "createdAt": {
+          "@id": "dcterms:created",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "Comment": {
+      "@id": "sioc:Post",
+      "@context": {
+        "content": {
+          "@id": "sioc:content"
+        },
+        "author": {
+          "@id": "sioc:has_creator"
+        },
+        "score": {
+          "@id": "slashdot:score"
+        },
+        "moderation": {
+          "@id": "slashdot:moderation"
+        },
+        "createdAt": {
+          "@id": "dcterms:created",
+          "@type": "xsd:dateTime"
+        },
+        "replyTo": {
+          "@id": "sioc:reply_of",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "RssFeed": {
+      "@id": "rss:channel",
+      "@context": {
+        "title": {
+          "@id": "rss:title"
+        },
+        "link": {
+          "@id": "rss:link",
+          "@type": "@id"
+        },
+        "description": {
+          "@id": "rss:description"
+        },
+        "items": {
+          "@id": "rss:items",
+          "@container": "@list"
+        },
+        "feedUrl": {
+          "@id": "slashdot:feedUrl",
+          "@type": "@id"
+        },
+        "section": {
+          "@id": "slashdot:section"
+        }
+      }
+    },
+
+    "SlashdotUser": {
+      "@id": "sioc:UserAccount",
+      "@context": {
+        "username": {
+          "@id": "sioc:name"
+        },
+        "uid": {
+          "@id": "schema:identifier"
+        },
+        "karma": {
+          "@id": "slashdot:karma"
+        },
+        "profileUrl": {
+          "@id": "schema:url",
+          "@type": "@id"
+        }
+      }
+    }
+  }
+}

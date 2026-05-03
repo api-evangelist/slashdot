@@ -1,0 +1,29 @@
+{
+  "feed": {
+    "title": "Slashdot",
+    "link": "https://slashdot.org/",
+    "description": "News for nerds, stuff that matters",
+    "items": [
+      {
+        "title": "Linux 6.15 Released With Major Scheduler and Power Management Improvements",
+        "link": "https://linux.slashdot.org/story/26/05/01/1234567/linux-615-released",
+        "description": "<p>Linus Torvalds has released Linux kernel 6.15 featuring significant improvements to the CFS scheduler, improved power management for laptop workloads, and updated driver support for recent AMD and Intel hardware. The release includes patches from over 1,800 developers.</p>",
+        "pubDate": "2026-05-01T14:22:00Z",
+        "author": "CmdrTaco",
+        "category": "Linux",
+        "comments": "https://linux.slashdot.org/story/26/05/01/1234567/linux-615-released#comments",
+        "guid": "https://linux.slashdot.org/story/26/05/01/1234567"
+      },
+      {
+        "title": "OpenAI Releases GPT-5 With Improved Reasoning Capabilities",
+        "link": "https://science.slashdot.org/story/26/05/01/0987654/openai-releases-gpt-5",
+        "description": "<p>OpenAI has announced GPT-5, claiming significant improvements in mathematical reasoning, code generation, and factual accuracy compared to GPT-4o. The model is available via API to all paying customers and through ChatGPT Plus.</p>",
+        "pubDate": "2026-05-01T10:05:00Z",
+        "author": "Zonk",
+        "category": "AI",
+        "comments": "https://science.slashdot.org/story/26/05/01/0987654/openai-releases-gpt-5#comments",
+        "guid": "https://science.slashdot.org/story/26/05/01/0987654"
+      }
+    ]
+  }
+}

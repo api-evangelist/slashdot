@@ -1,0 +1,175 @@
+vocabulary:
+  name: Slashdot Vocabulary
+  description: >-
+    Domain vocabulary for Slashdot, the technology news aggregation and community
+    discussion site. Covers news submission, moderation, karma, RSS feeds, and
+    the community culture of "News for nerds, stuff that matters."
+  created: '2026-05-02'
+  modified: '2026-05-02'
+  tags:
+    - Media
+    - Technology News
+    - Open Source
+    - Community
+    - RSS
+
+terms:
+  # Core Concepts
+  - term: Story
+    definition: >-
+      A news article or submission on Slashdot. Stories are submitted by
+      community members or editors and cover technology, open source, science,
+      and digital rights topics. Each story has a headline, summary, source link,
+      topic tag, and associated comment thread.
+    tags:
+      - Content
+      - Community
+
+  - term: Firehose
+    definition: >-
+      Slashdot's real-time submission queue where user-submitted stories await
+      editorial review before being promoted to the front page. The Firehose
+      allows community members to vote on pending submissions.
+    tags:
+      - Content
+      - Community
+
+  - term: Karma
+    definition: >-
+      A numerical reputation score assigned to Slashdot user accounts, accumulated
+      through story submissions, comment moderation scores, and community behavior.
+      Karma affects comment posting limits and moderation point allocations.
+    tags:
+      - Community
+      - Reputation
+
+  - term: Moderation
+    definition: >-
+      Slashdot's distributed comment quality system where randomly selected users
+      with available moderation points can rate comments on a scale from -1 to +5
+      using descriptors such as Insightful, Funny, Informative, Troll, or Flamebait.
+    tags:
+      - Community
+      - Quality
+
+  - term: Meta-Moderation
+    definition: >-
+      A secondary Slashdot quality-control mechanism where users evaluate whether
+      existing moderations were fair or unfair, providing accountability for the
+      primary moderation system.
+    tags:
+      - Community
+      - Quality
+
+  - term: Comment Score
+    definition: >-
+      The accumulated moderation rating of a Slashdot comment ranging from -1
+      (troll/spam) to +5 (excellent). Users can set a comment threshold to hide
+      low-scoring comments and see only high-quality responses.
+    tags:
+      - Community
+      - Quality
+
+  - term: Comment Threshold
+    definition: >-
+      A user-configurable setting on Slashdot that filters displayed comments by
+      minimum score, typically set between -1 and +5 to control comment visibility
+      and reduce noise in discussion threads.
+    tags:
+      - Community
+      - User Preferences
+
+  - term: Slashdot Effect
+    definition: >-
+      The phenomenon where a website linked from a Slashdot story receives a sudden
+      surge of traffic, often causing server overloads or outages. Also known as
+      "getting Slashdotted." Historically significant for demonstrating viral web
+      traffic patterns.
+    tags:
+      - Culture
+      - Traffic
+
+  # Sections/Topics
+  - term: Section
+    definition: >-
+      A topic-specific area of Slashdot such as Developers, Linux, Apple, Games,
+      Science, or Your Rights Online. Each section has a dedicated RSS feed at
+      rss.slashdot.org/Slashdot/slashdot{Section}.
+    tags:
+      - Content
+      - Navigation
+
+  - term: Your Rights Online (YRO)
+    definition: >-
+      A Slashdot section dedicated to digital rights, privacy, surveillance,
+      intellectual property law, and internet freedom topics. One of the
+      most active community discussion areas on the site.
+    tags:
+      - Content
+      - Rights
+      - Privacy
+
+  # Feed Terms
+  - term: RSS 1.0 (RDF Site Summary)
+    definition: >-
+      The feed format used by Slashdot, based on RDF (Resource Description
+      Framework). Slashdot RSS feeds are available at rss.slashdot.org and
+      are rate-limited to one request per 30 minutes.
+    tags:
+      - RSS
+      - Standards
+
+  - term: Atom 1.0
+    definition: >-
+      An alternative syndication feed format supported by Slashdot. Where
+      RSS feed URLs mention "RSS," users can substitute "atom" to receive
+      Atom 1.0 formatted content instead.
+    tags:
+      - RSS
+      - Standards
+
+  - term: Feed Rate Limit
+    definition: >-
+      Slashdot requests that automated feed consumers fetch each feed no more
+      than once every 30 minutes. Excessive requests may result in IP blocks
+      lasting up to 72 hours.
+    tags:
+      - RSS
+      - API Access
+
+  - term: Log Token
+    definition: >-
+      An authentication parameter appended to Slashdot RSS feed URLs for logged-in
+      subscribers, enabling access to personalized content, subscriber-only stories,
+      and inbox feeds.
+    tags:
+      - Authentication
+      - RSS
+
+  # Community Terms
+  - term: Editor
+    definition: >-
+      A Slashdot staff member or community volunteer responsible for reviewing
+      submitted stories, editing headlines and summaries, and promoting accepted
+      stories to the front page.
+    tags:
+      - Community
+      - Editorial
+
+  - term: AC (Anonymous Coward)
+    definition: >-
+      The default username displayed for unauthenticated or anonymous Slashdot
+      comment posters. A well-known piece of Slashdot culture that acknowledges
+      anonymous participation in discussions.
+    tags:
+      - Community
+      - Culture
+
+  - term: +5 Insightful
+    definition: >-
+      The highest positive moderation descriptor on Slashdot, applied to comments
+      that demonstrate exceptional analysis, expertise, or unique perspective on
+      a technical topic.
+    tags:
+      - Community
+      - Moderation

@@ -1,0 +1,60 @@
+extends: spectral:oas
+rules:
+  slashdot-feed-operation-summary:
+    description: All feed operations must have a descriptive Title Case summary
+    message: 'Operation summary must be present and use Title Case'
+    severity: warn
+    given: '$.paths[*][get].summary'
+    then:
+      function: pattern
+      functionOptions:
+        match: '^[A-Z][a-zA-Z0-9 ()/-]*$'
+
+  slashdot-feed-tag-required:
+    description: All feed operations must include the Feeds tag
+    message: 'Operations must include the "Feeds" tag'
+    severity: warn
+    given: '$.paths[*][get].tags'
+    then:
+      function: schema
+      functionOptions:
+        schema:
+          type: array
+          contains:
+            type: string
+            pattern: '^Feeds$'
+
+  slashdot-response-200-required:
+    description: All GET operations must define a 200 response
+    message: 'GET operations must define a 200 OK response'
+    severity: error
+    given: '$.paths[*].get.responses'
+    then:
+      function: schema
+      functionOptions:
+        schema:
+          type: object
+          required:
+            - '200'
+
+  slashdot-operation-id-camel-case:
+    description: Operation IDs must use camelCase
+    message: 'operationId must use camelCase (e.g., getMainFeed not get_main_feed)'
+    severity: warn
+    given: '$.paths[*][get].operationId'
+    then:
+      function: pattern
+      functionOptions:
+        match: '^[a-z][a-zA-Z0-9]+$'
+
+  slashdot-rss-content-type:
+    description: RSS feed responses must declare application/rss+xml content type
+    message: 'RSS feed responses should declare application/rss+xml content type'
+    severity: warn
+    given: '$.paths[*].get.responses.200.content'
+    then:
+      function: schema
+      functionOptions:
+        schema:
+          type: object
+          minProperties: 1
