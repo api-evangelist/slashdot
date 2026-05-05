@@ -1,0 +1,16 @@
+---
+title: "DOJ Sues Cloudera For Deliberately Excluding American Workers From Tech Jobs"
+url: "https://yro.slashdot.org/story/26/04/30/0533223/doj-sues-cloudera-for-deliberately-excluding-american-workers-from-tech-jobs?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+date: "2026-04-30T11:00:00+00:00"
+author: "BeauHD"
+feed_url: "https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline"
+---
+Longtime Slashdot reader schwit1 shares a report from ZeroHedge: The Justice Department on Tuesday sued Cloudera, accusing the enterprise data and artificial intelligence company of deliberately engineering a hiring process that excluded American workers from at least seven lucrative technology positions while the firm pursued permanent residency sponsorship for foreign workers on temporary visas. In a 14-page complaint filed with the Office of the Chief Administrative Hearing Officer, the department's Civil Rights Division alleges that Cloudera, from March 31, 2024, through at least January 28, 2025, instructed job candidates to submit applications to a dedicated email address, amerijobpostings@cloudera.com, that rejected all external messages with an automated bounce-back error. The company did not advertise the roles on its public careers website or accept applications through its standard portal, as it did for non-sponsorship positions.
+ 
+Cloudera then attested to the Department of Labor that it could not locate any qualified U.S. workers for the roles, which paid between approximately $180,000 and $294,000 annually, according to the filing. The positions included a Product Manager role in Santa Clara, California, with a listed salary range of $170,186 to $190,000. The case marks one of the most detailed enforcement actions under the Justice Department's Protecting U.S. Workers Initiative, which was relaunched last year and has already produced 10 settlements targeting employers accused of discriminating against American workers in favor of temporary visa holders. "Employers cannot use the PERM sponsorship process as a backdoor for discriminating against U.S. workers," Assistant Attorney General Harmeet K. Dhillon of the Civil Rights Division said in a statement. "The Division will not hesitate to sue companies who intentionally deter U.S. workers from applying to American jobs."<p><div class="share_submission">
+<a class="slashpop" href="http://twitter.com/home?status=DOJ+Sues+Cloudera+For+Deliberately+Excluding+American+Workers+From+Tech+Jobs%3A+https%3A%2F%2Fyro.slashdot.org%2Fstory%2F26%2F04%2F30%2F0533223%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"><img src="https://a.fsdn.com/sd/twitter_icon_large.png" /></a>
+<a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fyro.slashdot.org%2Fstory%2F26%2F04%2F30%2F0533223%2Fdoj-sues-cloudera-for-deliberately-excluding-american-workers-from-tech-jobs%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"><img src="https://a.fsdn.com/sd/facebook_icon_large.png" /></a>
+
+
+
+</div></p><p><a href="https://yro.slashdot.org/story/26/04/30/0533223/doj-sues-cloudera-for-deliberately-excluding-american-workers-from-tech-jobs?utm_source=rss1.0moreanon&amp;utm_medium=feed">Read more of this story</a> at Slashdot.</p>

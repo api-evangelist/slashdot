@@ -1,0 +1,16 @@
+---
+title: "In Real-World Test, an AI Model Did Better Than ER Doctors At Diagnosing Patients"
+url: "https://science.slashdot.org/story/26/04/30/1956259/in-real-world-test-an-ai-model-did-better-than-er-doctors-at-diagnosing-patients?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+date: "2026-04-30T22:00:00+00:00"
+author: "BeauHD"
+feed_url: "https://rss.slashdot.org/Slashdot/slashdotScience"
+---
+A new study from Harvard Medical School and Beth Israel Deaconess found that an OpenAI reasoning model outperformed experienced ER doctors at diagnosing and managing patient cases using messy, real-world emergency department records. Researchers say the results don't support replacing doctors, but they do suggest AI could meaningfully reshape clinical workflows if tested carefully in prospective trials. NPR reports: The researchers ran a series of experiments on the AI model to test its clinical acumen -- including actual cases like the lupus patient who'd been previously treated at the emergency department at Beth Israel in Boston. The team graded how well the AI model could provide an accurate diagnosis at three moments in time, from the triage stage in the ER, up to being admitted into the hospital. Overall, AI outperformed two experienced physicians -- and did so with only the electronic health records and the limited information that had been available to the physicians at the time. "This is the big conclusion for me -- it works with the messy real-world data of the emergency department, " said Dr. Adam Rodman, a clinical researcher at Beth Israel and one of the study authors. "It works for making diagnoses in the real world."
+ 
+Other parts of the study focused on case reports published in the New England Journal of Medicine and clinical vignettes to suss out whether the AI model could meet well-established "benchmarks" and game out thorny diagnostic questions. "The model outperformed our very large physician baseline," said Raj Manrai, assistant professor of Biomedical Informatics at Harvard Medical School who was also part of the study. The authors emphasize the AI relied on text alone, while in real life, clinicians need to attend to many other inputs like images, sounds and nonverbal cues when diagnosing and treating a patient. The findings have been published Thursday in the journal Science.<p><div class="share_submission">
+<a class="slashpop" href="http://twitter.com/home?status=In+Real-World+Test%2C+an+AI+Model+Did+Better+Than+ER+Doctors+At+Diagnosing+Patients%3A+https%3A%2F%2Fscience.slashdot.org%2Fstory%2F26%2F04%2F30%2F1956259%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"><img src="https://a.fsdn.com/sd/twitter_icon_large.png" /></a>
+<a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fscience.slashdot.org%2Fstory%2F26%2F04%2F30%2F1956259%2Fin-real-world-test-an-ai-model-did-better-than-er-doctors-at-diagnosing-patients%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"><img src="https://a.fsdn.com/sd/facebook_icon_large.png" /></a>
+
+
+
+</div></p><p><a href="https://science.slashdot.org/story/26/04/30/1956259/in-real-world-test-an-ai-model-did-better-than-er-doctors-at-diagnosing-patients?utm_source=rss1.0moreanon&amp;utm_medium=feed">Read more of this story</a> at Slashdot.</p>

@@ -1,0 +1,18 @@
+---
+title: "The Case Against an Imminent Software Developer Apocalypse"
+url: "https://developers.slashdot.org/story/26/05/01/1711213/the-case-against-an-imminent-software-developer-apocalypse?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+date: "2026-05-01T19:00:00+00:00"
+author: "BeauHD"
+feed_url: "https://rss.slashdot.org/Slashdot/slashdotDevelopers"
+---
+ZipNada shares a report from ZDNet: Given the dour headlines as of late concerning the diminishing amounts of entry-level software development jobs, coupled with predictions of applications entirely AI-generated, one could be forgiven for assuming that software developers may soon be an endangered species. However, the data tells a different story. James Bessen, professor at Boston University, has been pushing back for some time against the talk of AI and automation displacing jobs on a mass scale, and lately has been arguing that the roles of software developers are nowhere near extinction.
+ 
+AI is certainly not killing the software developer, Bessen said in a recent analysis (PDF). AI is taking over software development tasks and boosting productivity and output, but that is not translating into lost jobs, he argued. Instead, the types of software skills sought by companies are changing. "Surprisingly, however, after three years of AI use, software developer jobs have continued to grow robustly, reaching record levels of employment -- 2.5 million in February," Bessen said in the report, citing data from the US Bureau of Labor Statistics. The number of software developers in the US has grown by over 400,000, or 19%, since ChatGPT was introduced in 2022. At that time, the employed software developer population was just under 2.1 million. [...]
+ 
+The productivity uptick developers are seeing may ultimately be a boost to their professional opportunities, however. "An important and possibly disruptive change is happening, but the common view misunderstands what is going on," Bessen pointed out in his report. "Careful case studies find that AI improves the productivity of software developers -- that is, the software produced per developer -- by 30%, 50%, or more. And the rate of productivity improvement in software development is improving." Tellingly, since 2022, when ChatGPT was introduced, developer productivity has increased noticeably, Bessen continued. "From 2003 to 2022, developer productivity grew at 3.9% per year; but from 2022 through 2025, it grew at 6% per year." [...] A coming flood of new software products, now more likely to be enhanced by AI, will continue to create jobs for developers, Bessen predicted. "Thus, mass unemployment of software developers seems unlikely to happen soon." This doesn't mean the job descriptions of developers or other computer occupations will remain static. AI is shifting and re-inventing these roles, Bessen added.<p><div class="share_submission">
+<a class="slashpop" href="http://twitter.com/home?status=The+Case+Against+an+Imminent+Software+Developer+Apocalypse%3A+https%3A%2F%2Fdevelopers.slashdot.org%2Fstory%2F26%2F05%2F01%2F1711213%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"><img src="https://a.fsdn.com/sd/twitter_icon_large.png" /></a>
+<a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fdevelopers.slashdot.org%2Fstory%2F26%2F05%2F01%2F1711213%2Fthe-case-against-an-imminent-software-developer-apocalypse%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"><img src="https://a.fsdn.com/sd/facebook_icon_large.png" /></a>
+
+
+
+</div></p><p><a href="https://developers.slashdot.org/story/26/05/01/1711213/the-case-against-an-imminent-software-developer-apocalypse?utm_source=rss1.0moreanon&amp;utm_medium=feed">Read more of this story</a> at Slashdot.</p>

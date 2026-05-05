@@ -1,0 +1,49 @@
+{
+  "repo": "slashdot",
+  "feeds": [
+    {
+      "source": "https://rss.slashdot.org/Slashdot/slashdotMain",
+      "feed_url": "https://rss.slashdot.org/Slashdot/slashdotMain",
+      "saved": 10,
+      "title": "Slashdot"
+    },
+    {
+      "source": "https://rss.slashdot.org/Slashdot/slashdotDevelopers",
+      "feed_url": "https://rss.slashdot.org/Slashdot/slashdotDevelopers",
+      "saved": 10,
+      "title": "Slashdot: Developers"
+    },
+    {
+      "source": "https://rss.slashdot.org/Slashdot/slashdotApple",
+      "feed_url": "https://rss.slashdot.org/Slashdot/slashdotApple",
+      "saved": 10,
+      "title": "Slashdot: Apple"
+    },
+    {
+      "source": "https://rss.slashdot.org/Slashdot/slashdotLinux",
+      "feed_url": "https://rss.slashdot.org/Slashdot/slashdotLinux",
+      "saved": 10,
+      "title": "Slashdot: Linux"
+    },
+    {
+      "source": "https://rss.slashdot.org/Slashdot/slashdotGames",
+      "feed_url": "https://rss.slashdot.org/Slashdot/slashdotGames",
+      "saved": 10,
+      "title": "Slashdot: Games"
+    },
+    {
+      "source": "https://rss.slashdot.org/Slashdot/slashdotScience",
+      "feed_url": "https://rss.slashdot.org/Slashdot/slashdotScience",
+      "saved": 10,
+      "title": "Slashdot: Science"
+    },
+    {
+      "source": "https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline",
+      "feed_url": "https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline",
+      "saved": 10,
+      "title": "Slashdot: Your Rights Online"
+    }
+  ],
+  "post_count": 70,
+  "fetched": "2026-05-03T23:36:29Z"
+}

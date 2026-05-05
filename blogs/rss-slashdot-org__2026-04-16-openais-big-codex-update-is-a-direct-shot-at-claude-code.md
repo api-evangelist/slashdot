@@ -1,0 +1,16 @@
+---
+title: "OpenAI's Big Codex Update Is a Direct Shot At Claude Code"
+url: "https://developers.slashdot.org/story/26/04/16/2040206/openais-big-codex-update-is-a-direct-shot-at-claude-code?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+date: "2026-04-16T22:00:00+00:00"
+author: "BeauHD"
+feed_url: "https://rss.slashdot.org/Slashdot/slashdotDevelopers"
+---
+OpenAI is updating Codex with more agent-like capabilities, positioning it as a more direct rival to Anthropic's Claude Code. Some of the new features include the ability to operate macOS desktop apps, browse the web inside the app, generate images, use new workplace plug-ins, and remember useful context from past tasks. The Verge reports: Codex will now be able to operate desktop apps on your computer, OpenAI says in a blog post announcing the update. It can work in the background, meaning it won't interfere with your own work in other apps, and multiple agents can work in parallel. For developers, OpenAI says "this is helpful for testing and iterating on frontend changes, testing apps, or working in apps that don't expose an API." The feature will start rolling out to Codex desktop app users signed in with ChatGPT today and will initially be limited to macOS. OpenAI did not indicate a timeline for when use will expand to other operating systems. EU users will also have to wait, it said, adding that the update will roll out to users there "soon."
+ 
+Codex is also getting the ability to generate and iterate on images with gpt-image-1.5, new plug-ins for tools like GitLab, Atlassian Rovo, and Microsoft Suite, and native web browsing through an in-app browser, "where you can comment directly on pages to provide precise instructions to the agent." OpenAI also said it will also be easier to automate tasks, with users able to re-use existing conversation threads and Codex now able to schedule future work for itself and wake up automatically to continue on a long-term task. Codex will also be getting a memory feature allowing it to remember useful context from past experience, such as personal preferences, corrections, and information that took time to gather. OpenAI said it hopes the opt-in feature, which will be released as a preview, will help future tasks complete faster and to a quality that previously required detailed custom instructions. The personalization features will roll out to Enterprise, Edu, and EU users "soon."<p><div class="share_submission">
+<a class="slashpop" href="http://twitter.com/home?status=OpenAI's+Big+Codex+Update+Is+a+Direct+Shot+At+Claude+Code%3A+https%3A%2F%2Fdevelopers.slashdot.org%2Fstory%2F26%2F04%2F16%2F2040206%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"><img src="https://a.fsdn.com/sd/twitter_icon_large.png" /></a>
+<a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fdevelopers.slashdot.org%2Fstory%2F26%2F04%2F16%2F2040206%2Fopenais-big-codex-update-is-a-direct-shot-at-claude-code%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"><img src="https://a.fsdn.com/sd/facebook_icon_large.png" /></a>
+
+
+
+</div></p><p><a href="https://developers.slashdot.org/story/26/04/16/2040206/openais-big-codex-update-is-a-direct-shot-at-claude-code?utm_source=rss1.0moreanon&amp;utm_medium=feed">Read more of this story</a> at Slashdot.</p>
