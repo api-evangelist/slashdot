@@ -1,0 +1,300 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Slashdot RSS/Atom Feeds — Feeds
+  description: 'Slashdot RSS/Atom Feeds — Feeds. 8 operations. Lead operation: Get Apple Feed. Self-contained Naftiko capability
+    covering one Slashdot business surface.'
+  tags:
+  - Slashdot
+  - Feeds
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    SLASHDOT_API_KEY: SLASHDOT_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: rss-feeds
+    baseUri: https://rss.slashdot.org
+    description: Slashdot RSS/Atom Feeds — Feeds business capability. Self-contained, no shared references.
+    resources:
+    - name: Slashdot-slashdotApple
+      path: /Slashdot/slashdotApple
+      operations:
+      - name: getapplefeed
+        method: GET
+        description: Get Apple Feed
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: Slashdot-slashdotDevelopers
+      path: /Slashdot/slashdotDevelopers
+      operations:
+      - name: getdevelopersfeed
+        method: GET
+        description: Get Developers Feed
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: Slashdot-slashdotGames
+      path: /Slashdot/slashdotGames
+      operations:
+      - name: getgamesfeed
+        method: GET
+        description: Get Games Feed
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: Slashdot-slashdotLinux
+      path: /Slashdot/slashdotLinux
+      operations:
+      - name: getlinuxfeed
+        method: GET
+        description: Get Linux Feed
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: Slashdot-slashdotMain
+      path: /Slashdot/slashdotMain
+      operations:
+      - name: getmainfeed
+        method: GET
+        description: Get Main Feed
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: content_type
+          in: query
+          type: string
+          description: Set to 'rss' to get RSS format explicitly
+    - name: Slashdot-slashdotMainatom
+      path: /Slashdot/slashdotMainatom
+      operations:
+      - name: getmainfeedatom
+        method: GET
+        description: Get Main Feed (Atom)
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: Slashdot-slashdotScience
+      path: /Slashdot/slashdotScience
+      operations:
+      - name: getsciencefeed
+        method: GET
+        description: Get Science Feed
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: Slashdot-slashdotYourRightsOnline
+      path: /Slashdot/slashdotYourRightsOnline
+      operations:
+      - name: getyourrightsonlinefeed
+        method: GET
+        description: Get Your Rights Online Feed
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    namespace: rss-feeds-rest
+    port: 8080
+    description: REST adapter for Slashdot RSS/Atom Feeds — Feeds. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/slashdot/slashdotapple
+      name: slashdot-slashdotapple
+      description: REST surface for Slashdot-slashdotApple.
+      operations:
+      - method: GET
+        name: getapplefeed
+        description: Get Apple Feed
+        call: rss-feeds.getapplefeed
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/slashdot/slashdotdevelopers
+      name: slashdot-slashdotdevelopers
+      description: REST surface for Slashdot-slashdotDevelopers.
+      operations:
+      - method: GET
+        name: getdevelopersfeed
+        description: Get Developers Feed
+        call: rss-feeds.getdevelopersfeed
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/slashdot/slashdotgames
+      name: slashdot-slashdotgames
+      description: REST surface for Slashdot-slashdotGames.
+      operations:
+      - method: GET
+        name: getgamesfeed
+        description: Get Games Feed
+        call: rss-feeds.getgamesfeed
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/slashdot/slashdotlinux
+      name: slashdot-slashdotlinux
+      description: REST surface for Slashdot-slashdotLinux.
+      operations:
+      - method: GET
+        name: getlinuxfeed
+        description: Get Linux Feed
+        call: rss-feeds.getlinuxfeed
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/slashdot/slashdotmain
+      name: slashdot-slashdotmain
+      description: REST surface for Slashdot-slashdotMain.
+      operations:
+      - method: GET
+        name: getmainfeed
+        description: Get Main Feed
+        call: rss-feeds.getmainfeed
+        with:
+          content_type: rest.content_type
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/slashdot/slashdotmainatom
+      name: slashdot-slashdotmainatom
+      description: REST surface for Slashdot-slashdotMainatom.
+      operations:
+      - method: GET
+        name: getmainfeedatom
+        description: Get Main Feed (Atom)
+        call: rss-feeds.getmainfeedatom
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/slashdot/slashdotscience
+      name: slashdot-slashdotscience
+      description: REST surface for Slashdot-slashdotScience.
+      operations:
+      - method: GET
+        name: getsciencefeed
+        description: Get Science Feed
+        call: rss-feeds.getsciencefeed
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/slashdot/slashdotyourrightsonline
+      name: slashdot-slashdotyourrightsonline
+      description: REST surface for Slashdot-slashdotYourRightsOnline.
+      operations:
+      - method: GET
+        name: getyourrightsonlinefeed
+        description: Get Your Rights Online Feed
+        call: rss-feeds.getyourrightsonlinefeed
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: rss-feeds-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Slashdot RSS/Atom Feeds — Feeds. One tool per consumed operation, routed inline through this
+      capability's consumes block.
+    tools:
+    - name: get-apple-feed
+      description: Get Apple Feed
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: rss-feeds.getapplefeed
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-developers-feed
+      description: Get Developers Feed
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: rss-feeds.getdevelopersfeed
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-games-feed
+      description: Get Games Feed
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: rss-feeds.getgamesfeed
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-linux-feed
+      description: Get Linux Feed
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: rss-feeds.getlinuxfeed
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-main-feed
+      description: Get Main Feed
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: rss-feeds.getmainfeed
+      with:
+        content_type: tools.content_type
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-main-feed-atom
+      description: Get Main Feed (Atom)
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: rss-feeds.getmainfeedatom
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-science-feed
+      description: Get Science Feed
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: rss-feeds.getsciencefeed
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-your-rights-online-feed
+      description: Get Your Rights Online Feed
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: rss-feeds.getyourrightsonlinefeed
+      outputParameters:
+      - type: object
+        mapping: $.

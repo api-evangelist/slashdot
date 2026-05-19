@@ -1,0 +1,67 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Slashdot RSS/Atom Feeds — Developers
+  description: 'Slashdot RSS/Atom Feeds — Developers. 1 operations. Lead operation: Get Developers Feed. Self-contained Naftiko
+    capability covering one Slashdot business surface.'
+  tags:
+  - Slashdot
+  - Developers
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    SLASHDOT_API_KEY: SLASHDOT_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: rss-developers
+    baseUri: https://rss.slashdot.org
+    description: Slashdot RSS/Atom Feeds — Developers business capability. Self-contained, no shared references.
+    resources:
+    - name: Slashdot-slashdotDevelopers
+      path: /Slashdot/slashdotDevelopers
+      operations:
+      - name: getdevelopersfeed
+        method: GET
+        description: Get Developers Feed
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    namespace: rss-developers-rest
+    port: 8080
+    description: REST adapter for Slashdot RSS/Atom Feeds — Developers. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/slashdot/slashdotdevelopers
+      name: slashdot-slashdotdevelopers
+      description: REST surface for Slashdot-slashdotDevelopers.
+      operations:
+      - method: GET
+        name: getdevelopersfeed
+        description: Get Developers Feed
+        call: rss-developers.getdevelopersfeed
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: rss-developers-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Slashdot RSS/Atom Feeds — Developers. One tool per consumed operation, routed inline through
+      this capability's consumes block.
+    tools:
+    - name: get-developers-feed
+      description: Get Developers Feed
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: rss-developers.getdevelopersfeed
+      outputParameters:
+      - type: object
+        mapping: $.

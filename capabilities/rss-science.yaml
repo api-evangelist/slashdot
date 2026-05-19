@@ -1,0 +1,67 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Slashdot RSS/Atom Feeds — Science
+  description: 'Slashdot RSS/Atom Feeds — Science. 1 operations. Lead operation: Get Science Feed. Self-contained Naftiko
+    capability covering one Slashdot business surface.'
+  tags:
+  - Slashdot
+  - Science
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    SLASHDOT_API_KEY: SLASHDOT_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: rss-science
+    baseUri: https://rss.slashdot.org
+    description: Slashdot RSS/Atom Feeds — Science business capability. Self-contained, no shared references.
+    resources:
+    - name: Slashdot-slashdotScience
+      path: /Slashdot/slashdotScience
+      operations:
+      - name: getsciencefeed
+        method: GET
+        description: Get Science Feed
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    namespace: rss-science-rest
+    port: 8080
+    description: REST adapter for Slashdot RSS/Atom Feeds — Science. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/slashdot/slashdotscience
+      name: slashdot-slashdotscience
+      description: REST surface for Slashdot-slashdotScience.
+      operations:
+      - method: GET
+        name: getsciencefeed
+        description: Get Science Feed
+        call: rss-science.getsciencefeed
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: rss-science-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Slashdot RSS/Atom Feeds — Science. One tool per consumed operation, routed inline through
+      this capability's consumes block.
+    tools:
+    - name: get-science-feed
+      description: Get Science Feed
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: rss-science.getsciencefeed
+      outputParameters:
+      - type: object
+        mapping: $.

@@ -1,0 +1,67 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Slashdot RSS/Atom Feeds — Rights
+  description: 'Slashdot RSS/Atom Feeds — Rights. 1 operations. Lead operation: Get Your Rights Online Feed. Self-contained
+    Naftiko capability covering one Slashdot business surface.'
+  tags:
+  - Slashdot
+  - Rights
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    SLASHDOT_API_KEY: SLASHDOT_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: rss-rights
+    baseUri: https://rss.slashdot.org
+    description: Slashdot RSS/Atom Feeds — Rights business capability. Self-contained, no shared references.
+    resources:
+    - name: Slashdot-slashdotYourRightsOnline
+      path: /Slashdot/slashdotYourRightsOnline
+      operations:
+      - name: getyourrightsonlinefeed
+        method: GET
+        description: Get Your Rights Online Feed
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    namespace: rss-rights-rest
+    port: 8080
+    description: REST adapter for Slashdot RSS/Atom Feeds — Rights. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/slashdot/slashdotyourrightsonline
+      name: slashdot-slashdotyourrightsonline
+      description: REST surface for Slashdot-slashdotYourRightsOnline.
+      operations:
+      - method: GET
+        name: getyourrightsonlinefeed
+        description: Get Your Rights Online Feed
+        call: rss-rights.getyourrightsonlinefeed
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: rss-rights-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Slashdot RSS/Atom Feeds — Rights. One tool per consumed operation, routed inline through
+      this capability's consumes block.
+    tools:
+    - name: get-your-rights-online-feed
+      description: Get Your Rights Online Feed
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: rss-rights.getyourrightsonlinefeed
+      outputParameters:
+      - type: object
+        mapping: $.
