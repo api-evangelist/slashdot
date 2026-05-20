@@ -11,31 +11,31 @@
       "source": "https://rss.slashdot.org/Slashdot/slashdotDevelopers",
       "feed_url": "https://rss.slashdot.org/Slashdot/slashdotDevelopers",
       "title": "Slashdot: Developers",
-      "saved": 1
+      "saved": 12
     },
     {
       "source": "https://rss.slashdot.org/Slashdot/slashdotApple",
       "feed_url": "https://rss.slashdot.org/Slashdot/slashdotApple",
       "title": "Slashdot: Apple",
-      "saved": 2
+      "saved": 10
     },
     {
       "source": "https://rss.slashdot.org/Slashdot/slashdotLinux",
       "feed_url": "https://rss.slashdot.org/Slashdot/slashdotLinux",
       "title": "Slashdot: Linux",
-      "saved": 4
+      "saved": 9
     },
     {
       "source": "https://rss.slashdot.org/Slashdot/slashdotGames",
       "feed_url": "https://rss.slashdot.org/Slashdot/slashdotGames",
       "title": "Slashdot: Games",
-      "saved": 4
+      "saved": 9
     },
     {
       "source": "https://rss.slashdot.org/Slashdot/slashdotScience",
       "feed_url": "https://rss.slashdot.org/Slashdot/slashdotScience",
       "title": "Slashdot: Science",
-      "saved": 6
+      "saved": 7
     },
     {
       "source": "https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline",
@@ -44,6 +44,6 @@
       "saved": 11
     }
   ],
-  "post_count": 113,
-  "fetched": "2026-05-09T20:17:51Z"
+  "post_count": 186,
+  "fetched": "2026-05-17T20:20:35Z"
 }
