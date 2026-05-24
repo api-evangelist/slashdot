@@ -104,6 +104,8 @@ common:
   url: json-ld/slashdot-context.jsonld
 - type: Vocabulary
   url: vocabulary/slashdot-vocabulary.yml
+- type: LLMsTxt
+  url: https://slashdot.org/llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
