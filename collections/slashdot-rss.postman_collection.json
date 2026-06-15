@@ -1,0 +1,1153 @@
+{
+  "item": [
+    {
+      "id": "b45e5229-3f3d-4c72-b1f7-f9674a86d479",
+      "name": "Feeds",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "a6ac0625-6a23-4618-8774-74d3123175ac",
+          "name": "Get Main Feed",
+          "request": {
+            "name": "Get Main Feed",
+            "description": {
+              "content": "Returns the main Slashdot RSS 1.0 feed containing the latest stories across all topics. Rate limited to one request per 30 minutes.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "Slashdot",
+                "slashdotMain"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "content_type",
+                  "value": "<string>",
+                  "description": "Set to 'rss' to get RSS format explicitly"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/rss+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "65bf3eee-0d05-4a09-8cab-5ddc4dcb59a1",
+              "name": "RSS 1.0 feed of main Slashdot stories",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Slashdot",
+                    "slashdotMain"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "content_type",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/rss+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/rss+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>\n  <channel>\n    <title>Slashdot</title>\n    <link>https://slashdot.org/</link>\n    <description>News for nerds, stuff that matters</description>\n  </channel>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            },
+            {
+              "id": "f81ad9f8-7174-4d7e-9c2d-e44173f190ca",
+              "name": "Rate limit exceeded — too many requests within 30-minute window",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Slashdot",
+                    "slashdotMain"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "content_type",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "88f62a58-5894-4381-a42b-e4af8305893e",
+          "name": "Get Main Feed (Atom)",
+          "request": {
+            "name": "Get Main Feed (Atom)",
+            "description": {
+              "content": "Returns the main Slashdot Atom 1.0 feed containing the latest stories across all topics.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "Slashdot",
+                "slashdotMainatom"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/atom+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "58562ed6-898a-48ff-95ca-6fd5374536e8",
+              "name": "Atom 1.0 feed of main Slashdot stories",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Slashdot",
+                    "slashdotMainatom"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/atom+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/atom+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>\n  <title>(string)</title>\n  <updated>(string)</updated>\n  <entries>\n    <title>(string)</title>\n    <link>(string)</link>\n    <id>(string)</id>\n    <updated>(string)</updated>\n    <summary>(string)</summary>\n    <author>\n      <name>(string)</name>\n    </author>\n  </entries>\n  <entries>\n    <title>(string)</title>\n    <link>(string)</link>\n    <id>(string)</id>\n    <updated>(string)</updated>\n    <summary>(string)</summary>\n    <author>\n      <name>(string)</name>\n    </author>\n  </entries>\n</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8404ce89-2ac0-436f-adfb-97dd81e8ee0c",
+          "name": "Get Developers Feed",
+          "request": {
+            "name": "Get Developers Feed",
+            "description": {
+              "content": "Returns the Slashdot Developers section RSS feed with stories focused on software development, programming languages, and developer tools.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "Slashdot",
+                "slashdotDevelopers"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/rss+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "73ab1932-4af7-463e-9f8b-7c2119ca1a3f",
+              "name": "RSS 1.0 feed for the Developers section",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Slashdot",
+                    "slashdotDevelopers"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/rss+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/rss+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>\n  <channel>\n    <title>Slashdot</title>\n    <link>https://slashdot.org/</link>\n    <description>News for nerds, stuff that matters</description>\n  </channel>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "fa079afc-80ba-442d-89e4-52e56e960245",
+          "name": "Get Linux Feed",
+          "request": {
+            "name": "Get Linux Feed",
+            "description": {
+              "content": "Returns the Slashdot Linux section RSS feed with stories focused on the Linux kernel, Linux distributions, and open source software.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "Slashdot",
+                "slashdotLinux"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/rss+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "835f7472-d87f-42a5-83a8-c032389764bc",
+              "name": "RSS 1.0 feed for the Linux section",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Slashdot",
+                    "slashdotLinux"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/rss+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/rss+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>\n  <channel>\n    <title>Slashdot</title>\n    <link>https://slashdot.org/</link>\n    <description>News for nerds, stuff that matters</description>\n  </channel>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b9e5d2e0-3dd1-48b6-9f4d-dbb417259c65",
+          "name": "Get Apple Feed",
+          "request": {
+            "name": "Get Apple Feed",
+            "description": {
+              "content": "Returns the Slashdot Apple section RSS feed with stories about Apple products, macOS, iOS, and the Apple ecosystem.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "Slashdot",
+                "slashdotApple"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/rss+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3a784e95-2ea2-49a0-9607-83d983b77b8d",
+              "name": "RSS 1.0 feed for the Apple section",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Slashdot",
+                    "slashdotApple"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/rss+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/rss+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>\n  <channel>\n    <title>Slashdot</title>\n    <link>https://slashdot.org/</link>\n    <description>News for nerds, stuff that matters</description>\n  </channel>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "31b80e84-ccbb-42e7-9312-b42aca0c3d77",
+          "name": "Get Games Feed",
+          "request": {
+            "name": "Get Games Feed",
+            "description": {
+              "content": "Returns the Slashdot Games section RSS feed with stories about video games, gaming hardware, and the gaming industry.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "Slashdot",
+                "slashdotGames"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/rss+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "444f9e25-67d4-4412-be96-c86083c1acf2",
+              "name": "RSS 1.0 feed for the Games section",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Slashdot",
+                    "slashdotGames"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/rss+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/rss+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>\n  <channel>\n    <title>Slashdot</title>\n    <link>https://slashdot.org/</link>\n    <description>News for nerds, stuff that matters</description>\n  </channel>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7c328462-7a9a-49c3-84f2-0ba76f5a9c8b",
+          "name": "Get Science Feed",
+          "request": {
+            "name": "Get Science Feed",
+            "description": {
+              "content": "Returns the Slashdot Science section RSS feed with stories about scientific research, discoveries, space, and technology.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "Slashdot",
+                "slashdotScience"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/rss+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "26e5f6b1-a09d-4f49-b681-5a8411be1d63",
+              "name": "RSS 1.0 feed for the Science section",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Slashdot",
+                    "slashdotScience"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/rss+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/rss+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>\n  <channel>\n    <title>Slashdot</title>\n    <link>https://slashdot.org/</link>\n    <description>News for nerds, stuff that matters</description>\n  </channel>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7e65286a-eb41-486c-a32c-f8eb0b317194",
+          "name": "Get Your Rights Online Feed",
+          "request": {
+            "name": "Get Your Rights Online Feed",
+            "description": {
+              "content": "Returns the Slashdot Your Rights Online (YRO) section RSS feed with stories about digital rights, privacy, surveillance, and online freedom.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "Slashdot",
+                "slashdotYourRightsOnline"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/rss+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "96c6613d-bf1e-473d-a5b0-c68792f52eaa",
+              "name": "RSS 1.0 feed for the Your Rights Online section",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Slashdot",
+                    "slashdotYourRightsOnline"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/rss+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/rss+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>\n  <channel>\n    <title>Slashdot</title>\n    <link>https://slashdot.org/</link>\n    <description>News for nerds, stuff that matters</description>\n  </channel>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "a2f9fef3-9513-47de-b104-cffcfe620c64",
+      "name": "Developers",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "1d2b0c72-6297-4bcd-992e-872b85923e75",
+          "name": "Get Developers Feed",
+          "request": {
+            "name": "Get Developers Feed",
+            "description": {
+              "content": "Returns the Slashdot Developers section RSS feed with stories focused on software development, programming languages, and developer tools.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "Slashdot",
+                "slashdotDevelopers"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/rss+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1f4da9df-09ef-46eb-a02e-db9baa86a773",
+              "name": "RSS 1.0 feed for the Developers section",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Slashdot",
+                    "slashdotDevelopers"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/rss+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/rss+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>\n  <channel>\n    <title>Slashdot</title>\n    <link>https://slashdot.org/</link>\n    <description>News for nerds, stuff that matters</description>\n  </channel>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "04c804e1-1036-4d95-88c9-fc17096a39d7",
+      "name": "Linux",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "1e1931cb-e9bb-48a0-90cd-c90436b447de",
+          "name": "Get Linux Feed",
+          "request": {
+            "name": "Get Linux Feed",
+            "description": {
+              "content": "Returns the Slashdot Linux section RSS feed with stories focused on the Linux kernel, Linux distributions, and open source software.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "Slashdot",
+                "slashdotLinux"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/rss+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "dd70a670-c32a-4baf-b81b-8d62a4a69ba5",
+              "name": "RSS 1.0 feed for the Linux section",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Slashdot",
+                    "slashdotLinux"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/rss+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/rss+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>\n  <channel>\n    <title>Slashdot</title>\n    <link>https://slashdot.org/</link>\n    <description>News for nerds, stuff that matters</description>\n  </channel>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "3f35edea-3bb3-4b93-b99b-0f2610853b1a",
+      "name": "Apple",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "76e0356c-79b8-4b8a-bdb9-cdd4ce6880d4",
+          "name": "Get Apple Feed",
+          "request": {
+            "name": "Get Apple Feed",
+            "description": {
+              "content": "Returns the Slashdot Apple section RSS feed with stories about Apple products, macOS, iOS, and the Apple ecosystem.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "Slashdot",
+                "slashdotApple"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/rss+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5a6b1f79-8eac-4e88-9993-f3c29c3ab215",
+              "name": "RSS 1.0 feed for the Apple section",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Slashdot",
+                    "slashdotApple"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/rss+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/rss+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>\n  <channel>\n    <title>Slashdot</title>\n    <link>https://slashdot.org/</link>\n    <description>News for nerds, stuff that matters</description>\n  </channel>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "57436c48-bc13-46c2-892e-65db74250b4e",
+      "name": "Games",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "7c24c635-50ce-4eec-a287-5231d71d8c15",
+          "name": "Get Games Feed",
+          "request": {
+            "name": "Get Games Feed",
+            "description": {
+              "content": "Returns the Slashdot Games section RSS feed with stories about video games, gaming hardware, and the gaming industry.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "Slashdot",
+                "slashdotGames"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/rss+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "00c1c2f1-10e3-4a5b-b9d7-1cd0ef3340a0",
+              "name": "RSS 1.0 feed for the Games section",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Slashdot",
+                    "slashdotGames"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/rss+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/rss+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>\n  <channel>\n    <title>Slashdot</title>\n    <link>https://slashdot.org/</link>\n    <description>News for nerds, stuff that matters</description>\n  </channel>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "10c1472c-541f-44d1-b7b5-a55189e160d1",
+      "name": "Science",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "a75ab4bc-5775-474e-831b-cd2e1b507755",
+          "name": "Get Science Feed",
+          "request": {
+            "name": "Get Science Feed",
+            "description": {
+              "content": "Returns the Slashdot Science section RSS feed with stories about scientific research, discoveries, space, and technology.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "Slashdot",
+                "slashdotScience"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/rss+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7010ab2b-9e9e-491b-a5ea-5be41262323b",
+              "name": "RSS 1.0 feed for the Science section",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Slashdot",
+                    "slashdotScience"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/rss+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/rss+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>\n  <channel>\n    <title>Slashdot</title>\n    <link>https://slashdot.org/</link>\n    <description>News for nerds, stuff that matters</description>\n  </channel>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "d08f570b-a6dd-4577-b45b-da455c537de3",
+      "name": "Rights",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "70f76493-f0d1-4be6-848f-36d6ed2c96e8",
+          "name": "Get Your Rights Online Feed",
+          "request": {
+            "name": "Get Your Rights Online Feed",
+            "description": {
+              "content": "Returns the Slashdot Your Rights Online (YRO) section RSS feed with stories about digital rights, privacy, surveillance, and online freedom.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "Slashdot",
+                "slashdotYourRightsOnline"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/rss+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "69b69560-dca9-4051-9056-a5b176a85bbd",
+              "name": "RSS 1.0 feed for the Your Rights Online section",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Slashdot",
+                    "slashdotYourRightsOnline"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/rss+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/rss+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>\n  <channel>\n    <title>Slashdot</title>\n    <link>https://slashdot.org/</link>\n    <description>News for nerds, stuff that matters</description>\n  </channel>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://rss.slashdot.org",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "6cb58c40-51bf-4a53-a4f7-74687f1ef061",
+    "name": "Slashdot RSS/Atom Feeds",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Slashdot provides RSS 1.0 and Atom 1.0 feeds for programmatic access to technology news. Slashdot is a technology news aggregation and discussion site founded in 1997, covering open source, Linux, science, and technology. Feeds are available per topic section and are rate-limited to one request per 30 minutes per feed URL.",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Slashdot RSS/Atom Feeds",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Feeds",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Main Feed",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rss.slashdot.org/Slashdot/slashdotMain",
+            "params": [
+              {
+                "name": "content_type",
+                "value": "",
+                "type": "query",
+                "description": "Set to 'rss' to get RSS format explicitly"
+              }
+            ]
+          },
+          "docs": "Returns the main Slashdot RSS 1.0 feed containing the latest stories across all topics. Rate limited to one request per 30 minutes."
+        },
+        {
+          "info": {
+            "name": "Get Main Feed (Atom)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rss.slashdot.org/Slashdot/slashdotMainatom"
+          },
+          "docs": "Returns the main Slashdot Atom 1.0 feed containing the latest stories across all topics."
+        },
+        {
+          "info": {
+            "name": "Get Developers Feed",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rss.slashdot.org/Slashdot/slashdotDevelopers"
+          },
+          "docs": "Returns the Slashdot Developers section RSS feed with stories focused on software development, programming languages, and developer tools."
+        },
+        {
+          "info": {
+            "name": "Get Linux Feed",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rss.slashdot.org/Slashdot/slashdotLinux"
+          },
+          "docs": "Returns the Slashdot Linux section RSS feed with stories focused on the Linux kernel, Linux distributions, and open source software."
+        },
+        {
+          "info": {
+            "name": "Get Apple Feed",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rss.slashdot.org/Slashdot/slashdotApple"
+          },
+          "docs": "Returns the Slashdot Apple section RSS feed with stories about Apple products, macOS, iOS, and the Apple ecosystem."
+        },
+        {
+          "info": {
+            "name": "Get Games Feed",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rss.slashdot.org/Slashdot/slashdotGames"
+          },
+          "docs": "Returns the Slashdot Games section RSS feed with stories about video games, gaming hardware, and the gaming industry."
+        },
+        {
+          "info": {
+            "name": "Get Science Feed",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rss.slashdot.org/Slashdot/slashdotScience"
+          },
+          "docs": "Returns the Slashdot Science section RSS feed with stories about scientific research, discoveries, space, and technology."
+        },
+        {
+          "info": {
+            "name": "Get Your Rights Online Feed",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline"
+          },
+          "docs": "Returns the Slashdot Your Rights Online (YRO) section RSS feed with stories about digital rights, privacy, surveillance, and online freedom."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

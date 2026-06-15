@@ -1,73 +1,81 @@
-# Slashdot
+# Slashdot (slashdot)
 
-Slashdot (https://slashdot.org/) is a technology news aggregation and community discussion site founded in 1997, operating under the tagline "News for nerds, stuff that matters." The site focuses on open source software, Linux, science, and technology topics. Readers can submit stories, vote on submissions, and participate in threaded comment discussions with a scoring and moderation system. Slashdot is one of the earliest and longest-running technology news communities on the internet.
+Slashdot is a technology news aggregation and community discussion site founded in 1997, focused on open source software, Linux, science, and technology topics. Known by its tagline "News for nerds, stuff that matters," Slashdot allows readers to submit and vote on stories, comment on articles, and follow developments across the technology landscape. The site offers RSS and Atom feeds for programmatic access to its content across multiple topic sections including developers, Linux, games, science, Apple, and more. Feed requests are rate-limited to one per 30 minutes.
 
-## RSS Feeds
+**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/slashdot/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/slashdot/refs/heads/main/apis.yml)
 
-Slashdot does not offer a traditional REST API, but provides RSS 1.0 and Atom 1.0 feeds for programmatic access to its content. All feeds are available at `https://rss.slashdot.org/` and are rate-limited to one request per 30 minutes. To get an Atom feed, substitute `atom` for `rss` in the feed URL.
+## Scope
 
-### Main Feed
+- **Type:** Index
+- **Position:** Consumer
+- **Access:** 3rd-Party
 
-- **Main Feed:** https://rss.slashdot.org/Slashdot/slashdotMain
+## Tags
 
-### Section Feeds
+- Media
+- Open Source
+- Technology News
+- RSS
 
-- **Developers:** https://rss.slashdot.org/Slashdot/slashdotDevelopers
-- **Apple:** https://rss.slashdot.org/Slashdot/slashdotApple
-- **Linux:** https://rss.slashdot.org/Slashdot/slashdotLinux
-- **Games:** https://rss.slashdot.org/Slashdot/slashdotGames
-- **Science:** https://rss.slashdot.org/Slashdot/slashdotScience
-- **Your Rights Online:** https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline
+## Timestamps
 
-### Feed Usage Policy
+- **Created:** 2026-03-24
+- **Modified:** 2026-05-19
 
-Slashdot requests that feed consumers limit requests to once every 30 minutes. Excessive polling may result in IP blocks lasting up to 72 hours.
+## APIs
 
-## The Firehose
+### Slashdot RSS/Atom Feeds
 
-Slashdot's Firehose is a real-time stream of all content submitted to the site, including user story submissions, journal entries, comments, and RSS feed items. It allows readers to participate in the editorial process by voting on submissions. More details are available in the [Firehose FAQ](https://slashdot.org/faq/firehose.shtml).
+Slashdot provides RSS 1.0 and Atom 1.0 feeds for programmatic access to technology news across multiple topic sections. Feeds are rate-limited to one request per 30 minutes per feed URL. Section feeds are available by substituting section names in the base RSS URL pattern. Subscriber feeds support a log token parameter for personalized content.
 
-## Artifacts
+- **Human URL:** [https://slashdot.org/faq/feeds.shtml](https://slashdot.org/faq/feeds.shtml)
 
-### OpenAPI
+#### Tags
 
-| File | Description |
-|---|---|
-| [openapi/slashdot-rss-openapi.yml](openapi/slashdot-rss-openapi.yml) | OpenAPI 3.1 specification for all Slashdot RSS/Atom feed endpoints |
+- RSS
+- Atom
+- News
+- Technology News
+- Open Source
+- Media
 
-### Linked Data
+#### Properties
 
-| File | Description |
-|---|---|
-| [json-ld/slashdot-context.jsonld](json-ld/slashdot-context.jsonld) | JSON-LD context for Slashdot news articles, discussion threads, comments, RSS feeds, and users |
+- [R S S](https://rss.slashdot.org/Slashdot/slashdotMain)
+- [R S S](https://rss.slashdot.org/Slashdot/slashdotDevelopers)
+- [R S S](https://rss.slashdot.org/Slashdot/slashdotApple)
+- [R S S](https://rss.slashdot.org/Slashdot/slashdotLinux)
+- [R S S](https://rss.slashdot.org/Slashdot/slashdotGames)
+- [R S S](https://rss.slashdot.org/Slashdot/slashdotScience)
+- [R S S](https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline)
+- [OpenAPI](openapi/slashdot-rss-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
+- [Postman Collection](collections/slashdot-rss.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/slashdot-rss.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [JSON-LD](json-ld/slashdot-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
+- [Vocabulary](vocabulary/slashdot-vocabulary.yml)
 
-### Examples
+## Common Properties
 
-| File | Description |
-|---|---|
-| [examples/slashdot-rss-feed-example.json](examples/slashdot-rss-feed-example.json) | Example RSS feed response with story items |
-
-### Rules
-
-| File | Description |
-|---|---|
-| [rules/slashdot-rules.yml](rules/slashdot-rules.yml) | Spectral ruleset for Slashdot OpenAPI specs |
-
-### Vocabulary
-
-| File | Description |
-|---|---|
-| [vocabulary/slashdot-vocabulary.yml](vocabulary/slashdot-vocabulary.yml) | Domain vocabulary covering Slashdot community terms, moderation system, feed formats, and site culture |
-
-## Resources
-
-- **Website:** https://slashdot.org/
-- **About / FAQ:** https://slashdot.org/faq/slashmeta.shtml
-- **FAQ Index:** https://slashdot.org/faq/index.shtml
-- **Feeds FAQ:** https://slashdot.org/faq/feeds.shtml
-- **Firehose FAQ:** https://slashdot.org/faq/firehose.shtml
-- **Privacy Policy:** https://slashdot.org/privacy
+- [LinkedIn](https://www.linkedin.com/company/slashdot-media)
+- [Website](https://slashdot.org/)
+- [R S S](https://rss.slashdot.org/Slashdot/slashdotMain)
+- [R S S](https://rss.slashdot.org/Slashdot/slashdotDevelopers)
+- [R S S](https://rss.slashdot.org/Slashdot/slashdotApple)
+- [R S S](https://rss.slashdot.org/Slashdot/slashdotLinux)
+- [R S S](https://rss.slashdot.org/Slashdot/slashdotGames)
+- [R S S](https://rss.slashdot.org/Slashdot/slashdotScience)
+- [R S S](https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline)
+- [About](https://slashdot.org/faq/slashmeta.shtml)
+- [F A Q](https://slashdot.org/faq/index.shtml)
+- [F A Q- Feeds](https://slashdot.org/faq/feeds.shtml)
+- [Firehose](https://slashdot.org/faq/firehose.shtml)
+- [Privacy Policy](https://slashdot.org/privacy)
+- [OpenAPI](openapi/slashdot-rss-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
+- [JSON-LD](json-ld/slashdot-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
+- [Vocabulary](vocabulary/slashdot-vocabulary.yml)
+- [L L Ms Txt](https://slashdot.org/llms.txt)
 
 ## Maintainers
 
-- **Kin Lane** - kin@apievangelist.com
+**FN:** Kin Lane
+**Email:** kin@apievangelist.com
