@@ -93,7 +93,7 @@ common:
     url: json-ld/slashdot-context.jsonld
   - type: Vocabulary
     url: vocabulary/slashdot-vocabulary.yml
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://slashdot.org/llms.txt
 maintainers:
   - FN: Kin Lane
