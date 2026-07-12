@@ -59,6 +59,8 @@ apis:
       substituting section names in the base RSS URL pattern. Subscriber feeds support a log token parameter for
       personalized content.
 common:
+  - type: DomainSecurity
+    url: security/slashdot-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/slashdot-media
   - type: Website
