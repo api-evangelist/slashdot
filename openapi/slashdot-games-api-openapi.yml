@@ -1,0 +1,92 @@
+openapi: 3.1.0
+info:
+  title: Slashdot RSS/Atom Feeds Apple Games API
+  description: Slashdot provides RSS 1.0 and Atom 1.0 feeds for programmatic access to technology news. Slashdot is a technology news aggregation and discussion site founded in 1997, covering open source, Linux, science, and technology. Feeds are available per topic section and are rate-limited to one request per 30 minutes per feed URL.
+  version: '1.0'
+  contact:
+    url: https://slashdot.org/faq/feeds.shtml
+  license:
+    name: Slashdot Terms of Service
+    url: https://slashdot.org/terms.shtml
+servers:
+- url: https://rss.slashdot.org
+  description: Slashdot RSS Feed Server
+tags:
+- name: Games
+paths:
+  /Slashdot/slashdotGames:
+    get:
+      operationId: getGamesFeed
+      summary: Get Games Feed
+      description: Returns the Slashdot Games section RSS feed with stories about video games, gaming hardware, and the gaming industry.
+      tags:
+      - Games
+      responses:
+        '200':
+          description: RSS 1.0 feed for the Games section
+          content:
+            application/rss+xml:
+              schema:
+                $ref: '#/components/schemas/RssFeed'
+components:
+  schemas:
+    RssChannel:
+      type: object
+      description: RSS channel metadata
+      properties:
+        title:
+          type: string
+          description: Name of the feed (e.g., "Slashdot", "Slashdot Developers")
+          example: Slashdot
+        link:
+          type: string
+          format: uri
+          description: URL of the Slashdot section
+          example: https://slashdot.org/
+        description:
+          type: string
+          description: Description of the feed
+          example: News for nerds, stuff that matters
+    RssFeed:
+      type: object
+      description: RSS 1.0 (RDF Site Summary) feed document containing Slashdot stories.
+      properties:
+        channel:
+          $ref: '#/components/schemas/RssChannel'
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/RssItem'
+    RssItem:
+      type: object
+      description: Individual story item in the RSS feed
+      properties:
+        title:
+          type: string
+          description: Headline of the story
+          example: Linux 7.0 Released With Major Scheduler Overhaul
+        link:
+          type: string
+          format: uri
+          description: URL of the story on Slashdot
+        description:
+          type: string
+          description: HTML summary of the story with community commentary excerpt
+        pubDate:
+          type: string
+          format: date-time
+          description: Publication date and time of the story
+        author:
+          type: string
+          description: Slashdot username of the submitter or editor
+        category:
+          type: string
+          description: Topic category for the story
+          example: Linux
+        comments:
+          type: string
+          format: uri
+          description: URL of the comment thread for the story
+        guid:
+          type: string
+          description: Globally unique identifier for the story
