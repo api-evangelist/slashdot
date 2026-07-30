@@ -7,7 +7,19 @@ tags:
   - Technology News
   - RSS
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/slashdot.png
 access: 3rd-Party
 created: '2026-03-24'
 modified: '2026-05-19'
@@ -22,42 +34,195 @@ description: >-
   landscape. The site offers RSS and Atom feeds for programmatic access to its content across multiple topic sections
   including developers, Linux, games, science, Apple, and more. Feed requests are rate-limited to one per 30 minutes.
 apis:
-  - aid: slashdot:rss-feeds
-    name: Slashdot RSS/Atom Feeds
-    tags:
-      - RSS
-      - Atom
-      - News
-      - Technology News
-      - Open Source
-      - Media
-    humanURL: https://slashdot.org/faq/feeds.shtml
-    properties:
-      - url: https://rss.slashdot.org/Slashdot/slashdotMain
-        type: RSS
-      - url: https://rss.slashdot.org/Slashdot/slashdotDevelopers
-        type: RSS
-      - url: https://rss.slashdot.org/Slashdot/slashdotApple
-        type: RSS
-      - url: https://rss.slashdot.org/Slashdot/slashdotLinux
-        type: RSS
-      - url: https://rss.slashdot.org/Slashdot/slashdotGames
-        type: RSS
-      - url: https://rss.slashdot.org/Slashdot/slashdotScience
-        type: RSS
-      - url: https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline
-        type: RSS
-      - url: openapi/slashdot-rss-openapi.yml
-        type: OpenAPI
-      - url: json-ld/slashdot-context.jsonld
-        type: JSONLD
-      - url: vocabulary/slashdot-vocabulary.yml
-        type: Vocabulary
-    description: >-
-      Slashdot provides RSS 1.0 and Atom 1.0 feeds for programmatic access to technology news across multiple topic
-      sections. Feeds are rate-limited to one request per 30 minutes per feed URL. Section feeds are available by
-      substituting section names in the base RSS URL pattern. Subscriber feeds support a log token parameter for
-      personalized content.
+- aid: slashdot:slashdot-apple-api
+  name: Slashdot Apple API
+  description: The Apple API from Slashdot — 1 operation(s) for apple.
+  humanURL: https://slashdot.org/faq/feeds.shtml
+  tags:
+  - Apple
+  properties:
+  - type: OpenAPI
+    url: openapi/slashdot-apple-api-openapi.yml
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotMain
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotDevelopers
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotApple
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotLinux
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotGames
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotScience
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline
+  - type: JSONLD
+    url: json-ld/slashdot-context.jsonld
+  - type: Vocabulary
+    url: vocabulary/slashdot-vocabulary.yml
+- aid: slashdot:slashdot-developers-api
+  name: Slashdot Developers API
+  description: The Developers API from Slashdot — 1 operation(s) for developers.
+  humanURL: https://slashdot.org/faq/feeds.shtml
+  tags:
+  - Developers
+  properties:
+  - type: OpenAPI
+    url: openapi/slashdot-developers-api-openapi.yml
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotMain
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotDevelopers
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotApple
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotLinux
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotGames
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotScience
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline
+  - type: JSONLD
+    url: json-ld/slashdot-context.jsonld
+  - type: Vocabulary
+    url: vocabulary/slashdot-vocabulary.yml
+- aid: slashdot:slashdot-feeds-api
+  name: Slashdot Feeds API
+  description: The Feeds API from Slashdot — 8 operation(s) for feeds.
+  humanURL: https://slashdot.org/faq/feeds.shtml
+  tags:
+  - Feeds
+  properties:
+  - type: OpenAPI
+    url: openapi/slashdot-feeds-api-openapi.yml
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotMain
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotDevelopers
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotApple
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotLinux
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotGames
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotScience
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline
+  - type: JSONLD
+    url: json-ld/slashdot-context.jsonld
+  - type: Vocabulary
+    url: vocabulary/slashdot-vocabulary.yml
+- aid: slashdot:slashdot-games-api
+  name: Slashdot Games API
+  description: The Games API from Slashdot — 1 operation(s) for games.
+  humanURL: https://slashdot.org/faq/feeds.shtml
+  tags:
+  - Games
+  properties:
+  - type: OpenAPI
+    url: openapi/slashdot-games-api-openapi.yml
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotMain
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotDevelopers
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotApple
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotLinux
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotGames
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotScience
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline
+  - type: JSONLD
+    url: json-ld/slashdot-context.jsonld
+  - type: Vocabulary
+    url: vocabulary/slashdot-vocabulary.yml
+- aid: slashdot:slashdot-linux-api
+  name: Slashdot Linux API
+  description: The Linux API from Slashdot — 1 operation(s) for linux.
+  humanURL: https://slashdot.org/faq/feeds.shtml
+  tags:
+  - Linux
+  properties:
+  - type: OpenAPI
+    url: openapi/slashdot-linux-api-openapi.yml
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotMain
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotDevelopers
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotApple
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotLinux
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotGames
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotScience
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline
+  - type: JSONLD
+    url: json-ld/slashdot-context.jsonld
+  - type: Vocabulary
+    url: vocabulary/slashdot-vocabulary.yml
+- aid: slashdot:slashdot-rights-api
+  name: Slashdot Rights API
+  description: The Rights API from Slashdot — 1 operation(s) for rights.
+  humanURL: https://slashdot.org/faq/feeds.shtml
+  tags:
+  - Rights
+  properties:
+  - type: OpenAPI
+    url: openapi/slashdot-rights-api-openapi.yml
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotMain
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotDevelopers
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotApple
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotLinux
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotGames
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotScience
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline
+  - type: JSONLD
+    url: json-ld/slashdot-context.jsonld
+  - type: Vocabulary
+    url: vocabulary/slashdot-vocabulary.yml
+- aid: slashdot:slashdot-science-api
+  name: Slashdot Science API
+  description: The Science API from Slashdot — 1 operation(s) for science.
+  humanURL: https://slashdot.org/faq/feeds.shtml
+  tags:
+  - Science
+  properties:
+  - type: OpenAPI
+    url: openapi/slashdot-science-api-openapi.yml
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotMain
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotDevelopers
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotApple
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotLinux
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotGames
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotScience
+  - type: RSS
+    url: https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline
+  - type: JSONLD
+    url: json-ld/slashdot-context.jsonld
+  - type: Vocabulary
+    url: vocabulary/slashdot-vocabulary.yml
 common:
   - type: AgenticAccess
     url: agentic-access/slashdot-agentic-access.yml
