@@ -1,0 +1,26 @@
+{
+  "provider": "slashdot",
+  "sources": [
+    "slashdot-apple-api-openapi.yml",
+    "slashdot-developers-api-openapi.yml",
+    "slashdot-feeds-api-openapi.yml",
+    "slashdot-games-api-openapi.yml",
+    "slashdot-linux-api-openapi.yml",
+    "slashdot-rights-api-openapi.yml",
+    "slashdot-science-api-openapi.yml"
+  ],
+  "outputs": [
+    "slashdot-apple-api-openapi.yml",
+    "slashdot-developers-api-openapi.yml",
+    "slashdot-feeds-api-openapi.yml",
+    "slashdot-games-api-openapi.yml",
+    "slashdot-linux-api-openapi.yml",
+    "slashdot-rights-api-openapi.yml",
+    "slashdot-science-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

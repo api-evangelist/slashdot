@@ -5,7 +5,7 @@
       "source": "https://rss.slashdot.org/Slashdot/slashdotMain",
       "feed_url": "https://rss.slashdot.org/Slashdot/slashdotMain",
       "title": "",
-      "saved": 0,
+      "saved": 1,
       "method": "feed"
     },
     {
@@ -58,6 +58,6 @@
       "method": "discovered"
     }
   ],
-  "post_count": 468,
-  "fetched": "2026-07-11T11:50:51Z"
+  "post_count": 596,
+  "fetched": "2026-08-01T15:49:00Z"
 }
