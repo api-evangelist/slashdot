@@ -257,7 +257,7 @@ common:
   - type: PrivacyPolicy
     url: https://slashdot.org/privacy
   - type: OpenAPI
-    url: openapi/slashdot-rss-openapi.yml
+    url: openapi/_original/slashdot-rss-openapi.yml
   - type: JSONLD
     url: json-ld/slashdot-context.jsonld
   - type: Vocabulary
