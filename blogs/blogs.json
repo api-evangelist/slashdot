@@ -5,49 +5,49 @@
       "source": "https://rss.slashdot.org/Slashdot/slashdotMain",
       "feed_url": "https://rss.slashdot.org/Slashdot/slashdotMain",
       "title": "",
-      "saved": 0,
+      "saved": 15,
       "method": "feed"
     },
     {
       "source": "https://rss.slashdot.org/Slashdot/slashdotDevelopers",
       "feed_url": "https://rss.slashdot.org/Slashdot/slashdotDevelopers",
       "title": "",
-      "saved": 0,
+      "saved": 2,
       "method": "feed"
     },
     {
       "source": "https://rss.slashdot.org/Slashdot/slashdotApple",
       "feed_url": "https://rss.slashdot.org/Slashdot/slashdotApple",
       "title": "",
-      "saved": 0,
+      "saved": 2,
       "method": "feed"
     },
     {
       "source": "https://rss.slashdot.org/Slashdot/slashdotLinux",
       "feed_url": "https://rss.slashdot.org/Slashdot/slashdotLinux",
       "title": "",
-      "saved": 0,
+      "saved": 3,
       "method": "feed"
     },
     {
       "source": "https://rss.slashdot.org/Slashdot/slashdotGames",
       "feed_url": "https://rss.slashdot.org/Slashdot/slashdotGames",
       "title": "",
-      "saved": 0,
+      "saved": 4,
       "method": "feed"
     },
     {
       "source": "https://rss.slashdot.org/Slashdot/slashdotScience",
       "feed_url": "https://rss.slashdot.org/Slashdot/slashdotScience",
       "title": "",
-      "saved": 0,
+      "saved": 11,
       "method": "feed"
     },
     {
       "source": "https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline",
       "feed_url": "https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline",
       "title": "",
-      "saved": 0,
+      "saved": 8,
       "method": "feed"
     },
     {
@@ -58,6 +58,6 @@
       "method": "discovered"
     }
   ],
-  "post_count": 635,
-  "fetched": "2026-08-06T14:08:46Z"
+  "post_count": 680,
+  "fetched": "2026-08-15T12:11:08Z"
 }
