@@ -1,0 +1,104 @@
+{
+  "item": [
+    {
+      "id": "8f450bfc-3187-4d61-9cb3-793b5acebf0b",
+      "name": "Developers",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "d0cc9d17-7c9c-479b-a283-116254b56994",
+          "name": "Get Developers Feed",
+          "request": {
+            "name": "Get Developers Feed",
+            "description": {
+              "content": "Returns the Slashdot Developers section RSS feed with stories focused on software development, programming languages, and developer tools.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "Slashdot",
+                "slashdotDevelopers"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/rss+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "50221f8a-e957-4cc8-ae65-be9862f95cf0",
+              "name": "RSS 1.0 feed for the Developers section",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Slashdot",
+                    "slashdotDevelopers"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/rss+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/rss+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>\n  <channel>\n    <title>Slashdot</title>\n    <link>https://slashdot.org/</link>\n    <description>News for nerds, stuff that matters</description>\n  </channel>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://rss.slashdot.org",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "9b929661-f34d-47ee-99d2-ca2695625165",
+    "name": "Slashdot RSS/Atom Feeds Apple Developers API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Slashdot provides RSS 1.0 and Atom 1.0 feeds for programmatic access to technology news. Slashdot is a technology news aggregation and discussion site founded in 1997, covering open source, Linux, science, and technology. Feeds are available per topic section and are rate-limited to one request per 30 minutes per feed URL.",
+      "type": "text/plain"
+    }
+  }
+}

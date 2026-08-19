@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Slashdot RSS/Atom Feeds Apple Developers API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Developers",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Developers Feed",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rss.slashdot.org/Slashdot/slashdotDevelopers"
+          },
+          "docs": "Returns the Slashdot Developers section RSS feed with stories focused on software development, programming languages, and developer tools."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

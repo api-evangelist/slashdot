@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Slashdot RSS/Atom Feeds Apple Science API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Science",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Science Feed",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rss.slashdot.org/Slashdot/slashdotScience"
+          },
+          "docs": "Returns the Slashdot Science section RSS feed with stories about scientific research, discoveries, space, and technology."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

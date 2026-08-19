@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Slashdot RSS/Atom Feeds Apple Rights API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Rights",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Your Rights Online Feed",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rss.slashdot.org/Slashdot/slashdotYourRightsOnline"
+          },
+          "docs": "Returns the Slashdot Your Rights Online (YRO) section RSS feed with stories about digital rights, privacy, surveillance, and online freedom."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

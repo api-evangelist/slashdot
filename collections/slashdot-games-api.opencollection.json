@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Slashdot RSS/Atom Feeds Apple Games API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Games",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Games Feed",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rss.slashdot.org/Slashdot/slashdotGames"
+          },
+          "docs": "Returns the Slashdot Games section RSS feed with stories about video games, gaming hardware, and the gaming industry."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

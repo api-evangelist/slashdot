@@ -1,0 +1,104 @@
+{
+  "item": [
+    {
+      "id": "009a8173-0f88-47e1-80e9-27af06f682e7",
+      "name": "Games",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "fce988da-85f4-4beb-b9fb-054bdc396e41",
+          "name": "Get Games Feed",
+          "request": {
+            "name": "Get Games Feed",
+            "description": {
+              "content": "Returns the Slashdot Games section RSS feed with stories about video games, gaming hardware, and the gaming industry.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "Slashdot",
+                "slashdotGames"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/rss+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "56e1c6e2-bf77-48f3-8124-5f66cb2b6510",
+              "name": "RSS 1.0 feed for the Games section",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Slashdot",
+                    "slashdotGames"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/rss+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/rss+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>\n  <channel>\n    <title>Slashdot</title>\n    <link>https://slashdot.org/</link>\n    <description>News for nerds, stuff that matters</description>\n  </channel>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n  <items>\n    <title>Linux 7.0 Released With Major Scheduler Overhaul</title>\n    <link>(string)</link>\n    <description>(string)</description>\n    <pubDate>(string)</pubDate>\n    <author>(string)</author>\n    <category>Linux</category>\n    <comments>(string)</comments>\n    <guid>(string)</guid>\n  </items>\n</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://rss.slashdot.org",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "3b7cb325-3956-4a29-a1cf-52455f526757",
+    "name": "Slashdot RSS/Atom Feeds Apple Games API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Slashdot provides RSS 1.0 and Atom 1.0 feeds for programmatic access to technology news. Slashdot is a technology news aggregation and discussion site founded in 1997, covering open source, Linux, science, and technology. Feeds are available per topic section and are rate-limited to one request per 30 minutes per feed URL.",
+      "type": "text/plain"
+    }
+  }
+}
