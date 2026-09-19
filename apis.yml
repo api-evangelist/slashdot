@@ -55,6 +55,8 @@ apis:
   description: The Feeds API from Slashdot — 8 operation(s) for feeds.
   humanURL: https://slashdot.org/faq/feeds.shtml
   tags:
+  - Feed
+  tags_raw:
   - Feeds
   properties:
   - type: OpenAPI
