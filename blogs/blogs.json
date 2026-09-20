@@ -5,7 +5,7 @@
       "source": "https://rss.slashdot.org/Slashdot/slashdotMain",
       "feed_url": "https://rss.slashdot.org/Slashdot/slashdotMain",
       "title": "",
-      "saved": 1,
+      "saved": 0,
       "method": "feed"
     },
     {
@@ -58,8 +58,8 @@
       "method": "feed"
     }
   ],
-  "post_count": 856,
-  "fetched": "2026-09-13T13:00:00Z",
+  "post_count": 882,
+  "fetched": "2026-09-19T20:17:39Z",
   "feed_nature": "undetermined",
   "feed_nature_basis": null,
   "feed_nature_note": "Whether these posts are the vendor publishing or its support community, decided on the URL path grammar of the saved posts -- not the hostname, which carries both on Khoros, and not author diversity, which flags large vendor blogs as forums. 'undetermined' means undetermined."
