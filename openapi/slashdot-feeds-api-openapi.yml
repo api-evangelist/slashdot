@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Slashdot RSS/Atom Apple Feeds API
+  title: Slashdot RSS/Atom Feeds API
   description: Slashdot provides RSS 1.0 and Atom 1.0 feeds for programmatic access to technology news. Slashdot is a technology news aggregation and discussion site founded in 1997, covering open source, Linux, science, and technology. Feeds are available per topic section and are rate-limited to one request per 30 minutes per feed URL.
   version: '1.0'
   contact:
@@ -139,6 +139,16 @@ paths:
                 $ref: '#/components/schemas/RssFeed'
 components:
   schemas:
+    RssFeed:
+      type: object
+      description: RSS 1.0 (RDF Site Summary) feed document containing Slashdot stories.
+      properties:
+        channel:
+          $ref: '#/components/schemas/RssChannel'
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/RssItem'
     AtomFeed:
       type: object
       description: Atom 1.0 feed document containing Slashdot stories.
@@ -181,16 +191,23 @@ components:
             name:
               type: string
               description: Author display name
-    RssFeed:
+    RssChannel:
       type: object
-      description: RSS 1.0 (RDF Site Summary) feed document containing Slashdot stories.
+      description: RSS channel metadata
       properties:
-        channel:
-          $ref: '#/components/schemas/RssChannel'
-        items:
-          type: array
-          items:
-            $ref: '#/components/schemas/RssItem'
+        title:
+          type: string
+          description: Name of the feed (e.g., "Slashdot", "Slashdot Developers")
+          example: Slashdot
+        link:
+          type: string
+          format: uri
+          description: URL of the Slashdot section
+          example: https://slashdot.org/
+        description:
+          type: string
+          description: Description of the feed
+          example: News for nerds, stuff that matters
     RssItem:
       type: object
       description: Individual story item in the RSS feed
@@ -224,20 +241,3 @@ components:
         guid:
           type: string
           description: Globally unique identifier for the story
-    RssChannel:
-      type: object
-      description: RSS channel metadata
-      properties:
-        title:
-          type: string
-          description: Name of the feed (e.g., "Slashdot", "Slashdot Developers")
-          example: Slashdot
-        link:
-          type: string
-          format: uri
-          description: URL of the Slashdot section
-          example: https://slashdot.org/
-        description:
-          type: string
-          description: Description of the feed
-          example: News for nerds, stuff that matters

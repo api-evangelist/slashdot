@@ -1,0 +1,36 @@
+# Front Door AI Index — slashdot — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: slashdot
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: slashdot.org
+  final_host: slashdot.org
+  ownership: own
+  owner: slashdot
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 134
+  host_score: 134
+  density: 16.47
+  words: 8136
+  tiers:
+    agentic: 6
+    core: 82
+    model: 46
+  ambiguous: 13
+  top_terms:
+    AI: 80
+    OpenAI: 28
+    Anthropic: 11
+    agent: 8
+    ChatGPT: 6
+    prompts: 3
+    smart: 3
+    chatbot: 2
+    intelligence: 2
+    GPT: 1
+    artificial intelligence: 1
+    embedding: 1

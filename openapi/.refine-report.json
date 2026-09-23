@@ -1,26 +1,28 @@
 {
   "provider": "slashdot",
   "sources": [
-    "slashdot-apple-api-openapi.yml",
-    "slashdot-developers-api-openapi.yml",
-    "slashdot-feeds-api-openapi.yml",
-    "slashdot-games-api-openapi.yml",
-    "slashdot-linux-api-openapi.yml",
-    "slashdot-rights-api-openapi.yml",
-    "slashdot-science-api-openapi.yml"
+    "_original/slashdot-rss-openapi.yml"
   ],
   "outputs": [
-    "slashdot-apple-api-openapi.yml",
-    "slashdot-developers-api-openapi.yml",
-    "slashdot-feeds-api-openapi.yml",
-    "slashdot-games-api-openapi.yml",
-    "slashdot-linux-api-openapi.yml",
-    "slashdot-rights-api-openapi.yml",
-    "slashdot-science-api-openapi.yml"
+    "slashdot-feeds-api-openapi.yml"
   ],
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "slashdot-rss-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "slashdot-rss-openapi.yml: declared missing tag: Apple",
+    "slashdot-rss-openapi.yml: declared missing tag: Developers",
+    "slashdot-rss-openapi.yml: declared missing tag: Feeds",
+    "slashdot-rss-openapi.yml: declared missing tag: Games",
+    "slashdot-rss-openapi.yml: declared missing tag: Linux",
+    "slashdot-rss-openapi.yml: declared missing tag: Rights",
+    "slashdot-rss-openapi.yml: declared missing tag: Science",
+    "slashdot-rss-openapi.yml: multi-axis tagging (7 tags, 1 first tags, 1.75x duplication over 8 operations) \u2014 split on first tag, 6 operations narrowed",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "slashdot-feeds-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
