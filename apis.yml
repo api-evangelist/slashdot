@@ -3,7 +3,7 @@ url: https://raw.githubusercontent.com/api-evangelist/slashdot/refs/heads/main/a
 name: Slashdot
 tags:
   - Media
-  - Open-Source
+  - Open Source
   - Technology News
   - RSS
 tags_raw:
@@ -11,6 +11,7 @@ tags_raw:
   - Open Source
   - Technology News
   - RSS
+  - Open-Source
 type: Index
 deliveryModel:
   model: unknown
