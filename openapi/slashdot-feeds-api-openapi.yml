@@ -172,6 +172,21 @@ components:
         guid:
           type: string
           description: Globally unique identifier for the story
+    AtomFeed:
+      type: object
+      description: Atom 1.0 feed document containing Slashdot stories.
+      properties:
+        title:
+          type: string
+          description: Feed title
+        updated:
+          type: string
+          format: date-time
+          description: Last update timestamp
+        entries:
+          type: array
+          items:
+            $ref: '#/components/schemas/AtomEntry'
     RssFeed:
       type: object
       description: RSS 1.0 (RDF Site Summary) feed document containing Slashdot stories.
@@ -182,6 +197,23 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/RssItem'
+    RssChannel:
+      type: object
+      description: RSS channel metadata
+      properties:
+        title:
+          type: string
+          description: Name of the feed (e.g., "Slashdot", "Slashdot Developers")
+          example: Slashdot
+        link:
+          type: string
+          format: uri
+          description: URL of the Slashdot section
+          example: https://slashdot.org/
+        description:
+          type: string
+          description: Description of the feed
+          example: News for nerds, stuff that matters
     AtomEntry:
       type: object
       description: Individual story entry in an Atom feed
@@ -209,35 +241,3 @@ components:
             name:
               type: string
               description: Author display name
-    RssChannel:
-      type: object
-      description: RSS channel metadata
-      properties:
-        title:
-          type: string
-          description: Name of the feed (e.g., "Slashdot", "Slashdot Developers")
-          example: Slashdot
-        link:
-          type: string
-          format: uri
-          description: URL of the Slashdot section
-          example: https://slashdot.org/
-        description:
-          type: string
-          description: Description of the feed
-          example: News for nerds, stuff that matters
-    AtomFeed:
-      type: object
-      description: Atom 1.0 feed document containing Slashdot stories.
-      properties:
-        title:
-          type: string
-          description: Feed title
-        updated:
-          type: string
-          format: date-time
-          description: Last update timestamp
-        entries:
-          type: array
-          items:
-            $ref: '#/components/schemas/AtomEntry'
