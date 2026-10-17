@@ -139,21 +139,16 @@ paths:
                 $ref: '#/components/schemas/RssFeed'
 components:
   schemas:
-    AtomFeed:
+    RssFeed:
       type: object
-      description: Atom 1.0 feed document containing Slashdot stories.
+      description: RSS 1.0 (RDF Site Summary) feed document containing Slashdot stories.
       properties:
-        title:
-          type: string
-          description: Feed title
-        updated:
-          type: string
-          format: date-time
-          description: Last update timestamp
-        entries:
+        channel:
+          $ref: '#/components/schemas/RssChannel'
+        items:
           type: array
           items:
-            $ref: '#/components/schemas/AtomEntry'
+            $ref: '#/components/schemas/RssItem'
     RssChannel:
       type: object
       description: RSS channel metadata
@@ -171,43 +166,6 @@ components:
           type: string
           description: Description of the feed
           example: News for nerds, stuff that matters
-    AtomEntry:
-      type: object
-      description: Individual story entry in an Atom feed
-      properties:
-        title:
-          type: string
-          description: Story headline
-        link:
-          type: string
-          format: uri
-          description: URL of the story
-        id:
-          type: string
-          description: Unique identifier (permalink)
-        updated:
-          type: string
-          format: date-time
-          description: Last update timestamp for this entry
-        summary:
-          type: string
-          description: HTML summary of the story
-        author:
-          type: object
-          properties:
-            name:
-              type: string
-              description: Author display name
-    RssFeed:
-      type: object
-      description: RSS 1.0 (RDF Site Summary) feed document containing Slashdot stories.
-      properties:
-        channel:
-          $ref: '#/components/schemas/RssChannel'
-        items:
-          type: array
-          items:
-            $ref: '#/components/schemas/RssItem'
     RssItem:
       type: object
       description: Individual story item in the RSS feed
@@ -241,3 +199,45 @@ components:
         guid:
           type: string
           description: Globally unique identifier for the story
+    AtomEntry:
+      type: object
+      description: Individual story entry in an Atom feed
+      properties:
+        title:
+          type: string
+          description: Story headline
+        link:
+          type: string
+          format: uri
+          description: URL of the story
+        id:
+          type: string
+          description: Unique identifier (permalink)
+        updated:
+          type: string
+          format: date-time
+          description: Last update timestamp for this entry
+        summary:
+          type: string
+          description: HTML summary of the story
+        author:
+          type: object
+          properties:
+            name:
+              type: string
+              description: Author display name
+    AtomFeed:
+      type: object
+      description: Atom 1.0 feed document containing Slashdot stories.
+      properties:
+        title:
+          type: string
+          description: Feed title
+        updated:
+          type: string
+          format: date-time
+          description: Last update timestamp
+        entries:
+          type: array
+          items:
+            $ref: '#/components/schemas/AtomEntry'
